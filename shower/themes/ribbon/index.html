@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        section span {
+            padding-bottom: 0.4rem;
+            border-bottom: 0.6rem;
+        }
+        h2{
+            
+            position: relative;
+            top: -70px;
+        }
+        header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* Container for flexboxes */
+        .cust {
+            
+            position: relative;
+            top: -70px;
+            left:-70px;
+        display: -webkit-flex;
+        display: flex;
+        font-size: 11px;
+        width: 120%;
+        height: 90%;
+        /* 100 = viewport width, as 1vw = 1/100th of that
+        So if the container is 50% of viewport (as here)
+        then factor that into how you want it to size.
+        Let's say you like 5vw if it were the whole width,
+        then for this container, size it at 2.5vw (5 * .5 [i.e. 50%])
+        */
+        font-size: 1.1vw;
+        }
+
+        /* Style the navigation menu */
+        nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #96d3ce;
+        padding: 20px;
+        font-size: 10px;
+        max-width: 130px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        left:-15px;
+        }
+
+        /* Style the content */
+        article {
+        left:15px;
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: right;
+        font-size: 1vw;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+        img{
+            float: right;
+        }
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+        .cust {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body class="shower list grid">
+
+    <header class="caption">
+        <h1>Concepts</h1>
+        <p>@WinsWithBooks</p>
+    </header>
+<!--
+    <b>roof</b> 
+    <i>Portland</i> 
+    <mark>leggings</mark> 
+    <sup>1</sup> 
+    <sub>2</sub>
+    <code>&lt;paleo&gt;</code>
+    <footer class="footer">
+            <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny 
+                pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui,
+                 lomo disrupt 8-bit art party Tumblr scenester. Post-ironic
+                  fashion axe flexitarian, Tonx narwhal messenger bag Tumblr.
+                   Portland gentrify deep v kale chips literally.</p>
+        </footer>
+    -->
+
+
+    <section class="slide">
+        <h2 class="shout">
+            Categories 
+            for 
+            <i>Ideas</i>
+        </h2>
+    </section>
+
+
+
+    <section class="slide">  
+        
+            <h2>Culture</h2>
+     
+        
+        <section class="cust">
+            <nav>
+
+            <b>Type:</b>
+                </br>
+            </br>
+
+             <b>Linguistic:</b> Latin: cultura animi: cultivating soul;
+
+                </br>                
+            </br>
+            <b>Figures:</b> 
+            </nav>
+            
+            <article>
+                <img src="https://www.amplifyafrica.org/wp-content/uploads/2022/03/file-654.png"
+                style="object-fit:cover;width:350px;
+                height:250px;  top:70px;
+                border: solid 1px #CCC">
+                <span><ul>
+                    <li>The set or system of rules and meanings that create a commonly known ground and guiding rule for (social) behaviour and action to able to participate in social and group settings[Jordan Peterson]</li>
+                    <li>the known aspect of cultire and confirmity with it releive us from stress of not knowing and from conflict with herd and being alone, so also works as adaptive defensive strategy</li>
+                    <li>As a secondary function or product of common ground guiding rule function, culture provides a system of beliefs and value[Jordan Peterson]</li>
+                    <li>in contract to nature in sprit of cultivating soul, it is all the ways in which human beings overcome their original barbarism, and through artifice, become fully human</li>
+                    <li>encompassing the range of phenomena that are transmitted through social learning in human societies</li>
+                </ul></span>
+            </article>
+        </section>
+    
+      </section>
+
+
+<!--the start-->
+
+
+
+
+
+
+<!--the end-->
+    <section class="slide">
+        <h2 class="shout">The End</h2>
+    </section>
+
+    <div class="progress"></div>
+
+    <footer class="badge">
+        <a href="https://winswithdata.com">Website</a>
+    </footer>
+
+    <script src="../../shower.js"></script>
+
+</body>
+</html>

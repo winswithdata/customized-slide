@@ -1,0 +1,25 @@
+/* Columns */
+
+.columns {
+    display: grid;
+    width: 100%;
+    grid-column-gap: 75px;
+
+  border-style: none;
+}
+
+.columns.two {
+    grid-template-columns: 1fr 1fr ;
+        padding-bottom: 0.4rem;
+            border-bottom: 0.6rem;
+            position: relative;
+            top: -90px;
+}
+
+.columns.three {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.columns.four {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
